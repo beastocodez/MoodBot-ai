@@ -155,14 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBox.scrollTop = chatBox.scrollHeight;
 
         try {
-            const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${window.API_KEY}`
-                },
-                body: JSON.stringify(payload)
-            });
+           const response = await fetch("https://moodbot-backend.vercel.app/api/chat", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+});
+
 
             const data = await response.json();
             chatBox.removeChild(typingIndicator);
