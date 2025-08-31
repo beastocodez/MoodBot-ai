@@ -1,0 +1,1 @@
+window.API_KEY = "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";
