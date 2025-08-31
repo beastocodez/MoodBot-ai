@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+            model: "nousresearch/deephermes-3-llama-3-8b-preview:free",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
