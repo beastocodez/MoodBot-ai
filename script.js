@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "nousresearch/deephermes-3-llama-3-8b-preview:free",
+            model: "z-ai/glm-4.5-air:free",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
