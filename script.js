@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "z-ai/glm-4.5-air:free",
+            model: "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
