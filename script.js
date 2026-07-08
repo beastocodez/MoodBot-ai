@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "qnousresearch/hermes-3-llama-3.1-405b:free",
+            model: "meta-llama/llama-3-8b-instruct:free",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
