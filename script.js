@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "llama3-8b-8192",
+            model: "openai/gpt-oss-20b",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
