@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "google/gemma-4-31b-it:free",
+            model: "llama3-8b-8192",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
