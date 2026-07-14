@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const payload = {
-            model: "openai/gpt-oss-20b",
+            model: "cohere/north-mini-code:free",
             messages: [
                 { role: "system", content: moodPrompt[mood] || moodPrompt['neutral'] },
                 { role: "user", content: message }
